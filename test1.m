@@ -1,3 +1,5 @@
+(* ::Package:: *)
+
 clearvars 
 close all
 x=3:9;
@@ -6,7 +8,7 @@ plot(x,y,'.','markersize',20);
 xlabel('x axis')
 ylabel('y axis')
 
- %First we fit a line to this data 
+ % First we fit a line to this data 
 
  n=numel(x);
  A=[ones(n,1) x']
@@ -15,3 +17,4 @@ ylabel('y axis')
  yfit=coeff(1) + coeff(2)*xplot;
  hold 
  plot(xplot,yfit,'-')
+% testing git
